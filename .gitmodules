@@ -1,0 +1,18 @@
+[submodule "elf-build"]
+	path = elf-build
+	url = https://github.com/TephrocactusMYC/elf-build
+[submodule "elf-ta"]
+	path = elf-ta
+	url = https://github.com/TephrocactusMYC/elf-ta
+[submodule "elf-musl-libc"]
+	path = elf-musl-libc
+	url = https://github.com/TephrocactusMYC/elf-musl-libc
+[submodule "elf-optee-os"]
+	path = elf-optee-os
+	url = https://github.com/TephrocactusMYC/elf-optee-os
+[submodule "elf-optee-client"]
+	path = elf-optee-client
+	url = https://github.com/TephrocactusMYC/elf-optee-client
+[submodule "elf-optee-test"]
+	path = elf-optee-test
+	url = https://github.com/TephrocactusMYC/elf-optee-test
