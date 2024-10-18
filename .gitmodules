@@ -16,3 +16,6 @@
 [submodule "elf-optee-test"]
 	path = elf-optee-test
 	url = https://github.com/TephrocactusMYC/elf-optee-test
+[submodule "llama2.c"]
+	path = llama2.c
+	url = https://github.com/karpathy/llama2.c

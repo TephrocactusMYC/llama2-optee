@@ -4,6 +4,7 @@
 使用修改后的 musl-libc 编译 llama2.c 程序
 ```
 # 配置musl-libc
+cd elf-musl-libc
 ./configure --target=aarch64 --prefix=/musl CROSS_COMPILE=/optee/toolchains/aarch64/bin/aarch64-linux-gnu-
 ```
 编译llama2.c的run.c
@@ -11,8 +12,13 @@
 /musl/bin/musl-gcc run.c -O3 -fpie -pie -o run
 ```
 这里目前需要把llama2.c内的路径改为绝对路径
+```
+cd llama2.c 
+vim run.c
+```
+修改下面的内容
 ```C
-char *tokenizer_path = "/root/tokenizer.bin";
+char *tokenizer_path = "/root/tokenizer.bin"; // 根据REE侧的文件路径调节
 ```
 ## 编译OP-TEE
 根据 [optee documentation 在 QEMUv8 上的方法执行编译过程](https://optee.readthedocs.io/en/latest/building/devices/qemu.html#qemu-v8)
