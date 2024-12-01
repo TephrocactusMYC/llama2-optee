@@ -1,3 +1,6 @@
+It is currently confirmed that this code can run stably on version 4.2.0, but there are many issues with version 4.4.0. Due to the rapid iteration of OP-TEE (and related projects) and the shift in my current research focus, I will not be maintaining the code in this repository.
+
+Many thanks to [@Jian Zhaolong](https://github.com/JolyonJian) for his help. [Here](./run.md) is a more detailed documentation for using the code.
 # 程序使用方法
 **其中的路径需要根据自己需要调节**
 ## 配置musl
